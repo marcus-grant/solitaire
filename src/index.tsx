@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { Button } from 'rebass';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Button></Button>
   </React.StrictMode>,
   document.getElementById('root')
 );
