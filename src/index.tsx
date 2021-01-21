@@ -2,13 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Button } from 'rebass';
+// import { Button } from 'rebass/styled-components';
+import { Box, Flex, Link, Text } from 'rebass/styled-components';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* NAV */}
+    <Flex 
+      px={2}
+      color='black'
+      bg='white'
+      alignItems='center'
+     >
+      <Text p={2} fontWeight='bold'>Rebass</Text>
+      <Box mx='auto' />
+      <Link variant='nav' href='#!'>Menu</Link>
+    </Flex>
     <App />
-    <Button></Button>
   </React.StrictMode>,
   document.getElementById('root')
 );
