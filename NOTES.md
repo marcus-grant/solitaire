@@ -80,3 +80,21 @@ This example uses the `rebass` `Box` component as a *Card* which is common in ma
   </Card>
 </Box>
 ```
+
+Misc
+-----
+
+- CRA not reloading the app on changes can be temporarily fixed with the first bash snippet, permanently using the latter.
+- Taken from this [StackOverflow](https://stackoverflow.com/questions/42189575/create-react-app-reload-not-working)
+
+```bash
+sudo -i
+echo 1048576 > /proc/sys/fs/inotify/max_user_watches
+exit
+```
+
+```bash
+echo 'fs.inotify.max_user_watches=52488' >> /etc/sysctl.conf
+sudo sysctl -p
+```
+

@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 // import { Button } from 'rebass/styled-components';
-import { Box, Flex, Link, Text } from 'rebass/styled-components';
+import { Box, Card, Flex, Link, Text } from 'rebass/styled-components';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -19,7 +19,20 @@ ReactDOM.render(
       <Box mx='auto' />
       <Link variant='nav' href='#!'>Menu</Link>
     </Flex>
-    <App />
+    {/* Board */}
+    <Flex
+      px={4}
+      bg='#154f30'
+      alignItems='center'
+    >
+      <Flex>
+        <Card bg='red' width={64} height={128}>
+          <Text color='white'>CardStack</Text>
+        </Card>
+      </Flex>
+    </Flex>
+
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
