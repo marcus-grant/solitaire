@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 // import { Button } from 'rebass/styled-components';
-import { Box, Card, Flex, Link, Text } from 'rebass/styled-components';
+import { Box, Flex, Link, Text } from 'rebass/styled-components';
+import { Game } from './Game';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -19,20 +20,7 @@ ReactDOM.render(
       <Box mx='auto' />
       <Link variant='nav' href='#!'>Menu</Link>
     </Flex>
-    {/* Board */}
-    <Flex
-      px={4}
-      bg='#154f30'
-      alignItems='center'
-    >
-      <Flex>
-        <Card bg='red' width={64} height={128}>
-          <Text color='white'>CardStack</Text>
-        </Card>
-      </Flex>
-    </Flex>
-
-    {/* <App /> */}
+    <Game />
   </React.StrictMode>,
   document.getElementById('root')
 );
